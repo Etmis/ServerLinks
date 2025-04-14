@@ -1,0 +1,16 @@
+name: ServerLinks
+version: '1.1.0'
+main: com.etmisthefox.serverLinks.ServerLinks
+api-version: '1.21'
+authors: [ EtmisTheFox ]
+description: Provides commands to websites such as your discord invitation link
+website: https://etmisthefox.com
+commands:
+  slreload:
+    description: Reloads config.yml
+    usage: /slreload
+    permission: serverlinks.reload
+permissions:
+  serverlinks.reload:
+    description: allows player with this permission to use /slreload
+    default: op

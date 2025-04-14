@@ -1,0 +1,63 @@
+
+
+#    ███████╗███████╗██████╗ ██╗   ██╗███████╗██████╗ ██╗     ██╗███╗   ██╗██╗  ██╗███████╗
+#    ██╔════╝██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗██║     ██║████╗  ██║██║ ██╔╝██╔════╝
+#    ███████╗█████╗  ██████╔╝██║   ██║█████╗  ██████╔╝██║     ██║██╔██╗ ██║█████╔╝ ███████╗
+#    ╚════██║██╔══╝  ██╔══██╗╚██╗ ██╔╝██╔══╝  ██╔══██╗██║     ██║██║╚██╗██║██╔═██╗ ╚════██║
+#    ███████║███████╗██║  ██║ ╚████╔╝ ███████╗██║  ██║███████╗██║██║ ╚████║██║  ██╗███████║
+#    ╚══════╝╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝
+
+
+# ===============================
+# Color Formatting Guide
+# ===============================
+
+# This plugin supports advanced color formatting using the ForestMC ColorAPI.
+# You can use gradient, RGB hex, and classic Minecraft color codes.
+
+# --------
+# GRADIENT
+# --------
+# Syntax: {#hex1>}Text{#hex2<}
+# The text between the tags will be smoothly colored from hex1 to hex2.
+# Example:
+# {#ff0000>}Welcome{#00ff00<} → Will create a gradient from red to green
+
+# -------
+# RGB HEX
+# -------
+# Syntax: {#hex}
+# Applies a flat RGB hex color to text.
+# Example:
+# {#00ffff}Aqua text
+
+# --------------
+# CLASSIC COLORS
+# --------------
+# Syntax: &color-code
+# Standard Minecraft color codes still work (like &a for green, &c for red).
+# Example:
+# &6Gold text
+
+# -------------------
+# AUTO COLOR DETECTION
+# -------------------
+# You can also use ColorAPI.colorize() to automatically detect and apply
+# any type of coloring used in the string (gradient, RGB, classic).
+
+# ===============================
+# Example Config Entries
+# ===============================
+
+commands:
+
+  # Gradient: Red to Green
+  discord: "{#ff0000>}https://discord.gg/xxxxxxxxxx{#00ff00<}"
+
+  # RGB flat red (no gradient)
+  website: "{#ff3333}https://example.com"
+
+  # Classic aqua color
+  shop: "&bhttps://shop.example.com"
+
+# FOR TAB COMPLETION YOU NEED TO RESTART YOUR SERVER!
