@@ -22,14 +22,35 @@ ServerLinks is a Bukkit/Spigot plugin that allows server administrators to add c
 
 The configuration is stored in `config.yml`. Here you can define custom commands and their associated messages. You can use advanced color formatting as follows:
 
-- **Gradient:** `{#hex1>}Text{#hex2<}`
-- **RGB Hex:** `{#hex}`
-- **Classic Colors:** `&color-code`
+- **Gradient:** {#hex1>}Text{#hex2<}
+- **RGB Hex:** {#hex}
+- **Classic Colors:** &color-code
 
 Example configuration:
 
-```yaml
+```
 commands:
   discord: "{#ff0000>}https://discord.gg/xxxxxxxxxx{#00ff00<}"
   website: "{#ff3333}https://example.com"
   shop: "&bhttps://shop.example.com"
+```
+
+## Commands
+
+- `/slreload`: Reloads the configuration (`config.yml`). Requires `serverlinks.reload` permission.
+
+## Permissions
+
+- `serverlinks.reload`: Allows players with this permission to use the `/slreload` command. Default: OP.
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please feel free to submit a pull request. Please ensure that your changes align with the overall functionality and style of the plugin.
+
+## Authors
+
+- **EtmisTheFox**
+
+## My website
+
+[https://etmisthefox.com](https://etmisthefox.com)
