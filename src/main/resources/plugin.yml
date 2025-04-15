@@ -1,9 +1,9 @@
 name: ServerLinks
-version: '1.1.0'
+version: '1.1.1'
 main: com.etmisthefox.serverLinks.ServerLinks
-api-version: '1.21'
+#api-version: '1.21'
 authors: [ EtmisTheFox ]
-description: Provides commands to websites such as your discord invitation link
+description: Add custom website links to your server with dynamic commands and advanced color formatting.
 website: https://etmisthefox.com
 commands:
   slreload:
